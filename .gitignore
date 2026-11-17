@@ -1,0 +1,5 @@
+node_modules/
+source/node_modules/
+source/dist/
+source/desktop/node_modules/
+source/desktop/out/

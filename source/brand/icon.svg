@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#9a2837"/><stop offset="1" stop-color="#5a1520"/></linearGradient>
+    <linearGradient id="pg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f1e9e4"/></linearGradient>
+    <linearGradient id="gd" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f7d77a"/><stop offset="1" stop-color="#d49a2a"/></linearGradient>
+  </defs>
+  <rect id="tile" width="512" height="512" rx="112" fill="url(#bg)"/>
+  <g id="art">
+    <!-- open book -->
+    <path d="M256 170c-40-26-92-34-146-28v214c54-6 106 2 146 28z" fill="url(#pg)"/>
+    <path d="M256 170c40-26 92-34 146-28v214c-54-6-106 2-146 28z" fill="url(#pg)"/>
+    <path d="M256 170v214" stroke="#5a1520" stroke-opacity=".25" stroke-width="5"/>
+    <!-- ledger lines left -->
+    <g stroke="#7A1F2B" stroke-width="10" stroke-linecap="round" opacity=".85">
+      <path d="M140 196c30-2 64 4 92 16"/><path d="M140 232c30-2 64 4 92 16"/><path d="M140 268c30-2 64 4 92 16"/>
+    </g>
+    <!-- bars right -->
+    <g fill="#7A1F2B">
+      <rect x="286" y="268" width="24" height="56" rx="5"/><rect x="322" y="236" width="24" height="90" rx="5"/><rect x="358" y="204" width="24" height="124" rx="5"/>
+    </g>
+    <!-- coin -->
+    <circle cx="372" cy="372" r="64" fill="url(#gd)" stroke="#fff" stroke-width="10"/>
+    <text x="372" y="394" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="58" fill="#6b3d06">Rs</text>
+  </g>
+</svg>

@@ -1,0 +1,52 @@
+{
+  "name": "budget-book",
+  "productName": "Budget Book",
+  "version": "1.1.0",
+  "description": "Record transactions and print a complete budget book. Data stays on this computer.",
+  "author": "Meshan Navod",
+  "main": "main.js",
+  "build": {
+    "appId": "app.budgetbook.desktop",
+    "productName": "Budget Book",
+    "copyright": "Budget Book",
+    "directories": {
+      "output": "out",
+      "buildResources": "build"
+    },
+    "files": [
+      "main.js",
+      "web/**/*"
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "build/icon.ico",
+      "signAndEditExecutable": false
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Budget Book",
+      "installerIcon": "build/icon.ico",
+      "uninstallerIcon": "build/icon.ico",
+      "installerHeaderIcon": "build/icon.ico",
+      "artifactName": "Budget_Book_Setup_${version}.exe",
+      "deleteAppDataOnUninstall": false,
+      "runAfterFinish": true
+    }
+  },
+  "devDependencies": {
+    "electron": "^33.4.11",
+    "electron-builder": "^25.1.8",
+    "resedit": "^2.0.3"
+  }
+}
